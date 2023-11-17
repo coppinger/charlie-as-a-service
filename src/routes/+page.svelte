@@ -46,11 +46,12 @@
             <li>— Feedback on your designs</li>
             <li>— Designs done for you</li>
         </ul>
-        <a
+        <!-- <a
             class="underline underline-offset-8 decoration-2"
             target="_blank"
             href="/">Contact me {"->"}</a
-        >
+        > -->
+        <p>hey@charlieasaservice.com</p>
     </div>
 </div>
 
