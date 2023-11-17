@@ -6,6 +6,9 @@ export default {
             fontFamily: {
                 manrope: ["Manrope Variable", "sans-serif"],
             },
+            backgroundImage: {
+                "sand-dunes": "url('/sand-dunes.jpg')",
+            },
         },
     },
     plugins: [],
