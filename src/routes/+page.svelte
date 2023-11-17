@@ -5,9 +5,11 @@
 <div class="z-0 grid absolute min-w-screen min-h-screen grid-cols-6 w-full">
     {#each Array(6) as _}
         <div class="border-right-1 flex flex-col">
-            {#each Array(200) as _}
+            {#each Array(256) as _}
                 {#each chars as char}
-                    <p class="text-[1px] leading-[1px]">{char}</p>
+                    <p class="text-[1px] leading-[1px]" aria-hidden="true">
+                        {char}
+                    </p>
                 {/each}
             {/each}
         </div>
