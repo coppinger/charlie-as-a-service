@@ -51,7 +51,7 @@
             target="_blank"
             href="/">Contact me {"->"}</a
         > -->
-        <p>hey@charlieasaservice.com</p>
+        <p class="italic">hey@charlieasaservice.com</p>
     </div>
 </div>
 
