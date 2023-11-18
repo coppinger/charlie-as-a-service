@@ -1,5 +1,111 @@
-<script>
+<script lang="ts">
+    import { onMount } from "svelte";
+    import { TweenLite, gsap } from "gsap";
+
     let chars = ["h", "i", "r", "e", "m", "e"];
+
+    let count = 0;
+    const tl = gsap.timeline();
+    function bath() {
+        const bathTL = gsap.timeline();
+        const item = gsap.utils.toArray(".bath-item");
+        count++;
+        if (count == 5) {
+            bathTL
+                .to(".bath", {
+                    duration: 1,
+                    y: -60,
+                    rotate: 380,
+                    scale: 1.5,
+                    opacity: 1,
+                    yoyo: true,
+                    ease: "power4.out",
+                })
+                .to(".bath", {
+                    duration: 1,
+                    y: 0,
+                    rotate: 0,
+                    scale: 1,
+                    opacity: 0,
+                    delay: 3,
+                    yoyo: true,
+                    ease: "power4.out",
+                });
+            count = 0;
+        }
+    }
+
+    onMount(() => {
+        tl.fromTo(
+            ".fade-in",
+            {
+                y: -10,
+                opacity: 0,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power4.out",
+            }
+        )
+            .fromTo(
+                ".title",
+                {
+                    y: -10,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+
+                    ease: "power4.out",
+                }
+            )
+            .fromTo(
+                ".sub-header",
+                {
+                    y: -10,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "power4.out",
+                },
+                "-=2.5"
+            )
+            .fromTo(
+                ".li-1",
+                {
+                    y: -10,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "power4.out",
+                },
+                "-=2.5"
+            )
+            .fromTo(
+                ".li-2",
+                {
+                    y: -10,
+                    opacity: 0,
+                },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 3,
+                    ease: "power4.out",
+                },
+                "-=2.5"
+            );
+    });
 </script>
 
 <div class="z-0 grid absolute min-w-screen min-h-screen grid-cols-6 w-full">
@@ -15,7 +121,7 @@
         </div>
     {/each}
 </div>
-<div class="grid grid-cols-6 w-full py-4 md:py-20 z-10">
+<div class="grid grid-cols-6 w-full py-4 md:py-20 z-10 fade-in opacity-0">
     <div class="col-start-2 col-span-1 flex gap-4">
         <p>¼</p>
         <a
@@ -40,20 +146,20 @@
     <div
         class=" col-start-2 col-span-4 md:col-start-3 md:col-span-2 flex flex-col gap-4 items-start"
     >
-        <h1 class="text-5xl font-extrabold text-neutral-900">
+        <h1 class="text-5xl font-extrabold text-neutral-900 title opacity-0">
             Charlie as a Service
         </h1>
-        <p class="font-bold">UX/UI & design consultant</p>
+        <p class="font-bold sub-header opacity-0">UX/UI & design consultant</p>
         <ul>
-            <li>— Feedback on your designs</li>
-            <li>— Designs done for you</li>
+            <li class="li-1 opacity-0">— Feedback on your designs</li>
+            <li class="li-1 opacity-0">— Designs done for you</li>
         </ul>
         <!-- <a
             class="underline underline-offset-8 decoration-2"
             target="_blank"
             href="/">Contact me {"->"}</a
         > -->
-        <div class="flex gap-2 items-center justify-center">
+        <div class="flex gap-2 items-center justify-center li-2 opacity-0">
             <svg
                 width="16"
                 height="16"
@@ -71,7 +177,9 @@
     </div>
 </div>
 
-<div class="grid grid-cols-6 w-full py-4 md:py-20 z-10 gap-4 md:gap-0">
+<div
+    class="grid grid-cols-6 w-full py-4 md:py-20 z-10 gap-4 md:gap-0 fade-in opacity-0"
+>
     <div class="col-start-2 col-span-5 md:col-start-2 md:col-span-1 flex gap-4">
         <p>¼</p>
         <a
@@ -81,8 +189,17 @@
         >
     </div>
 
-    <div class="col-span-5 col-start-2 md:col-span-1 md:col-start-5 flex gap-4">
-        <a href="/">Made in the bath™</a>
+    <div
+        class="col-span-5 col-start-2 md:col-span-1 md:col-start-5 flex gap-4 relative"
+    >
+        <button on:click={bath}>Made in the bath™</button>
+        <div class=" absolute -z-10 right-1/4">
+            <img
+                class=" text-3xl bath w-10 rounded-lg rotate-90 grayscale shadow-xl opacity-0"
+                src="/bath.png"
+                alt="Charlie in the bath"
+            />
+        </div>
         <p>¼</p>
     </div>
 </div>
