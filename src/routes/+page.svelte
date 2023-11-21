@@ -151,15 +151,27 @@
         </h1>
         <p class="font-bold sub-header opacity-0">UX/UI & design consultant</p>
         <ul class="flex flex-col gap-2">
-            <li class="li-1 opacity-0">— Feedback on your designs:</li>
-            <ul class="">
-                <li class="li-1 opacity-0 ml-4">• 15 minutes, $20</li>
-                <li class="li-1 opacity-0 ml-4">• 30 minutes, $35</li>
-                <li class="li-1 opacity-0 ml-4">• 60 minutes, $60</li>
+            <li class="li-1 opacity-0">Feedback on your designs:</li>
+            <ul class="flex flex-col gap-2">
+                <li class="li-1 opacity-0 ml-4">— 10 minutes, $25</li>
+                <li class="li-1 opacity-0 ml-4">— 20 minutes, $45</li>
+                <li class="li-1 opacity-0 ml-4">— 30 minutes, $60</li>
+                <li class="li-1 opacity-0 place-self-end self-end">
+                    <a
+                        href="https://buy.stripe.com/3csbMD10Sb5wc12cMM"
+                        target="_blank"
+                        class="underline underline-offset-4 decoration-2 place-self-end self-end"
+                        >Book now</a
+                    >
+                </li>
             </ul>
-            <li class="li-1 opacity-0">— Designs done for you</li>
+        </ul>
+        <ul class="flex flex-col gap-2">
+            <li class="li-1 opacity-0">Designs done for you</li>
             <ul class="">
-                <li class="li-1 opacity-0 ml-4">Rate available on request</li>
+                <li class="li-1 opacity-0 ml-4 italic">
+                    — Rates available on request
+                </li>
             </ul>
         </ul>
         <!-- <a
@@ -167,7 +179,7 @@
             target="_blank"
             href="/">Contact me {"->"}</a
         > -->
-        <div class="flex gap-2 items-center justify-center li-2 opacity-0">
+        <div class="flex gap-2 items-center justify-center li-2 opacity-0 mt-4">
             <svg
                 width="16"
                 height="16"
@@ -180,7 +192,9 @@
                     fill="#171717"
                 />
             </svg>
-            <p class="italic">hey@charlieasaservice.com</p>
+            <a href="mailto:hey@charlieasaservice.com"
+                >hey@charlieasaservice.com</a
+            >
         </div>
     </div>
 </div>
