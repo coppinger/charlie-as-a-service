@@ -150,9 +150,17 @@
             Charlie as a Service
         </h1>
         <p class="font-bold sub-header opacity-0">UX/UI & design consultant</p>
-        <ul>
-            <li class="li-1 opacity-0">— Feedback on your designs</li>
+        <ul class="flex flex-col gap-2">
+            <li class="li-1 opacity-0">— Feedback on your designs:</li>
+            <ul class="">
+                <li class="li-1 opacity-0 ml-4">• 15 minutes, $20</li>
+                <li class="li-1 opacity-0 ml-4">• 30 minutes, $35</li>
+                <li class="li-1 opacity-0 ml-4">• 60 minutes, $60</li>
+            </ul>
             <li class="li-1 opacity-0">— Designs done for you</li>
+            <ul class="">
+                <li class="li-1 opacity-0 ml-4">Rate available on request</li>
+            </ul>
         </ul>
         <!-- <a
             class="underline underline-offset-8 decoration-2"
