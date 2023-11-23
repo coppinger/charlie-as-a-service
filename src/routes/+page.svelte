@@ -153,9 +153,9 @@
         <ul class="flex flex-col gap-2">
             <li class="li-1 opacity-0">Feedback on your designs:</li>
             <ul class="flex flex-col gap-2">
-                <li class="li-1 opacity-0 ml-4">— 10 minutes, $25</li>
-                <li class="li-1 opacity-0 ml-4">— 20 minutes, $45</li>
-                <li class="li-1 opacity-0 ml-4">— 30 minutes, $60</li>
+                <li class="li-1 opacity-0 ml-4">— 10 minutes, $25 USD</li>
+                <li class="li-1 opacity-0 ml-4">— 20 minutes, $45 USD</li>
+                <li class="li-1 opacity-0 ml-4">— 30 minutes, $60 USD</li>
                 <li class="li-1 opacity-0 place-self-end self-end">
                     <a
                         href="https://buy.stripe.com/3csbMD10Sb5wc12cMM"
