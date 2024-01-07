@@ -10,13 +10,13 @@
         const bathTL = gsap.timeline();
         const item = gsap.utils.toArray(".bath-item");
         count++;
-        if (count == 5) {
+        if (count == 1) {
             bathTL
                 .to(".bath", {
                     duration: 1,
-                    y: -60,
+                    y: -160,
                     rotate: 380,
-                    scale: 1.5,
+                    scale: 4,
                     opacity: 1,
                     yoyo: true,
                     ease: "power4.out",
@@ -149,53 +149,59 @@
         <h1 class="text-5xl font-extrabold text-neutral-900 title opacity-0">
             Charlie as a Service
         </h1>
-        <p class="font-bold sub-header opacity-0">UX/UI & design consultant</p>
-        <ul class="flex flex-col gap-2">
-            <li class="li-1 opacity-0">Feedback on your designs:</li>
+        <p class="font-bold text-2xl sub-header opacity-0">Product designer</p>
+        <div class="flex flex-col gap-8">
             <ul class="flex flex-col gap-2">
-                <li class="li-1 opacity-0 ml-4">— 10 minutes, $25 USD</li>
-                <li class="li-1 opacity-0 ml-4">— 20 minutes, $45 USD</li>
-                <li class="li-1 opacity-0 ml-4">— 30 minutes, $60 USD</li>
-                <li class="li-1 opacity-0 place-self-end self-end">
-                    <a
-                        href="https://buy.stripe.com/3csbMD10Sb5wc12cMM"
-                        target="_blank"
-                        class="underline underline-offset-4 decoration-2 place-self-end self-end"
-                        >Book now</a
-                    >
-                </li>
+                <li class="li-1 opacity-0">Feedback on your designs:</li>
+                <ul class="flex flex-col gap-2">
+                    <li class="li-1 opacity-0 ml-4">— 10 minutes, $50</li>
+                    <li class="li-1 opacity-0 ml-4">— 30 minutes, $80</li>
+                    <li class="li-1 opacity-0 ml-4">— 60 minutes, $120</li>
+                    <li class="li-1 opacity-0 place-self-end self-end">
+                        <a
+                            href="https://buy.stripe.com/7sI17ZfVMgpQ7KM6ot"
+                            target="_blank"
+                            class="underline underline-offset-4 decoration-2 place-self-end self-end"
+                            >Book now</a
+                        >
+                    </li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="flex flex-col gap-2">
-            <li class="li-1 opacity-0">Designs done for you</li>
-            <ul class="">
-                <li class="li-1 opacity-0 ml-4 italic">
-                    — Rates available on request
-                </li>
+            <ul class="flex flex-col gap-2">
+                <li class="li-1 opacity-0">Design contracting:</li>
+                <ul class="flex flex-col gap-2">
+                    <li class="li-1 opacity-0 ml-4">
+                        — Project based, $120~ /hour
+                    </li>
+                    <li class="li-1 opacity-0 place-self-end self-end">
+                        <div
+                            class="flex gap-2 items-center justify-center li-2 opacity-0 mt-4"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.8667 1.6C13.8155 1.60035 13.7646 1.60807 13.7156 1.62292C13.7012 1.62683 13.687 1.63135 13.6729 1.63646L1.94688 5.36562V5.36771C1.84514 5.40567 1.75742 5.47379 1.69543 5.56295C1.63344 5.65211 1.60015 5.75807 1.60001 5.86667C1.6002 5.95825 1.62397 6.04824 1.66904 6.12796C1.7141 6.20769 1.77894 6.27447 1.8573 6.32187L5.42084 9.14896L12.4656 3.53437L6.85105 10.5792L9.67605 14.1406C9.72338 14.2197 9.79037 14.2851 9.87051 14.3306C9.95066 14.376 10.0412 14.3999 10.1333 14.4C10.2419 14.3999 10.3479 14.3666 10.4371 14.3046C10.5262 14.2426 10.5943 14.1549 10.6323 14.0531H10.6344L14.3667 2.31667C14.3705 2.30601 14.374 2.29525 14.3771 2.28437C14.3919 2.23539 14.3997 2.18452 14.4 2.13333C14.4 1.99188 14.3438 1.85623 14.2438 1.75621C14.1438 1.65619 14.0081 1.6 13.8667 1.6Z"
+                                    fill="#171717"
+                                />
+                            </svg>
+                            <a href="mailto:hey@charlieasaservice.com"
+                                >hey@charlieasaservice.com</a
+                            >
+                        </div>
+                    </li>
+                </ul>
             </ul>
-        </ul>
+        </div>
         <!-- <a
             class="underline underline-offset-8 decoration-2"
             target="_blank"
             href="/">Contact me {"->"}</a
         > -->
-        <div class="flex gap-2 items-center justify-center li-2 opacity-0 mt-4">
-            <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                    d="M13.8667 1.6C13.8155 1.60035 13.7646 1.60807 13.7156 1.62292C13.7012 1.62683 13.687 1.63135 13.6729 1.63646L1.94688 5.36562V5.36771C1.84514 5.40567 1.75742 5.47379 1.69543 5.56295C1.63344 5.65211 1.60015 5.75807 1.60001 5.86667C1.6002 5.95825 1.62397 6.04824 1.66904 6.12796C1.7141 6.20769 1.77894 6.27447 1.8573 6.32187L5.42084 9.14896L12.4656 3.53437L6.85105 10.5792L9.67605 14.1406C9.72338 14.2197 9.79037 14.2851 9.87051 14.3306C9.95066 14.376 10.0412 14.3999 10.1333 14.4C10.2419 14.3999 10.3479 14.3666 10.4371 14.3046C10.5262 14.2426 10.5943 14.1549 10.6323 14.0531H10.6344L14.3667 2.31667C14.3705 2.30601 14.374 2.29525 14.3771 2.28437C14.3919 2.23539 14.3997 2.18452 14.4 2.13333C14.4 1.99188 14.3438 1.85623 14.2438 1.75621C14.1438 1.65619 14.0081 1.6 13.8667 1.6Z"
-                    fill="#171717"
-                />
-            </svg>
-            <a href="mailto:hey@charlieasaservice.com"
-                >hey@charlieasaservice.com</a
-            >
-        </div>
     </div>
 </div>
 
@@ -214,7 +220,10 @@
     <div
         class="col-span-5 col-start-2 md:col-span-1 md:col-start-5 flex gap-4 relative"
     >
-        <button on:click={bath}>Made in the bath™</button>
+        <button
+            class="underline underline-offset-8 decoration-2"
+            on:click={bath}>Made in the bath™</button
+        >
         <div class=" absolute -z-10 right-1/4">
             <img
                 class=" text-3xl bath w-10 rounded-lg rotate-90 grayscale shadow-xl opacity-0"
